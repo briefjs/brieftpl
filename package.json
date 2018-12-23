@@ -1,6 +1,6 @@
 {
-  "name": "brieftpl",
-  "version": "0.1.0",
+  "name": "brief-tpl",
+  "version": "0.2.0",
   "description": "The template for BriefJS and other declarative JavaScript frameworks.",
   "main": "src/index.js",
   "scripts": {

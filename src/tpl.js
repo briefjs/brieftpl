@@ -4,7 +4,7 @@
 
 import adapter from './adapter';
 
-function getChildren(textNodes, ...sub) {
+export function renderTag(textNodes, ...sub) {
   return [...sub.map((el, i) => {
     if(typeof el === 'function') {
       el = el``;
@@ -18,14 +18,14 @@ function getChildren(textNodes, ...sub) {
   }, []);
 }
 
-export default function taged(nodeName, selfClosing = false) {
+export function tagged(nodeName, selfClosing = false) {
   return function (...args) {
     if(Array.isArray(args[0])) { // no attributes
-      return adapter.createElement(nodeName, {}, ...getChildren(...args));
+      return adapter.createElement(nodeName, {}, ...renderTag(...args));
     }
     const attrs = args[0];
     return function (...args) {
-      return adapter.createElement(nodeName, attrs, ...getChildren(...args));
+      return adapter.createElement(nodeName, attrs, ...renderTag(...args));
     };
   };
 }

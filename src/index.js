@@ -1,5 +1,5 @@
-import taged from './tpl';
+import {tagged, renderTag} from './tpl';
 import tags from './tags';
 import adapter from './adapter';
 
-export {taged, tags, adapter};
+export {tagged, renderTag, tags, adapter};

@@ -1,4 +1,4 @@
-import taged from './tpl';
+import {tagged} from './tpl';
 import adapter from './adapter';
 
 const tagNames = ('html,body,base,head,link,meta,style,title,'
@@ -40,6 +40,6 @@ adapter.createElement = (nodeName, attributes, ...children) => {
   return `<${nodeName}${adapter.parseAttributes(attributes)}>${children.join('')}</${nodeName}>`;
 };
 
-tagNames.forEach((name) => { tags[name] = taged(name) });
+tagNames.forEach((name) => { tags[name] = tagged(name) });
 
 export default tags;

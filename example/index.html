@@ -26,6 +26,11 @@
         ${span`556`}
       `;
       console.log(tpl);
+
+      function v(...args) {
+        return brieftpl.renderTag(...args);
+      }
+      console.log(v`${div`ccc`}${div`ccc`}`);
     </script>
 </body>
 </html>
