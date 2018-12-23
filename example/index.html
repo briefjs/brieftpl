@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <script src="/js/brieftpl.js"></script>
+    <script>
+      const {div, span, img} = brieftpl.tags;
+
+      const MyTag = span`555`;
+      const tpl = div`
+        ${img({src: 111})}
+        ${span({a: 1})`1`}
+        ${span({a: 2})`2`}
+        ${span({a: 3})`3`}
+        ${div({b: 1})`
+          ${MyTag}
+        `}
+      `;
+      const tpl2 = div`
+        ${span`555`}
+        ${span`556`}
+      `;
+      console.log(tpl);
+    </script>
+</body>
+</html>
