@@ -44,7 +44,7 @@ render(div({id: 'foo'})`
 `, document.body);
 ```
 
-### Work with react(https://github.com/facebook/react)
+### Work with [react](https://github.com/facebook/react)
 
 ```js
 const {adapter, tags} = brieftpl;
