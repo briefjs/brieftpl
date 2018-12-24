@@ -1,6 +1,6 @@
 {
-  "name": "brief-tpl",
-  "version": "0.2.1",
+  "name": "@briefjs/brieftpl",
+  "version": "0.1.0",
   "description": "The JSX alternative template for declarative JavaScript frameworks.",
   "main": "src/index.js",
   "scripts": {

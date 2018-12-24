@@ -13,7 +13,7 @@ From CDN:
 With NPM:
 
 ```bash
-npm install brief-tpl
+npm install @briefjs/brieftpl
 ```
 
 ## Example
