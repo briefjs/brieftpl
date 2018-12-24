@@ -1,7 +1,7 @@
 {
   "name": "brief-tpl",
-  "version": "0.2.0",
-  "description": "The template for BriefJS and other declarative JavaScript frameworks.",
+  "version": "0.2.1",
+  "description": "The JSX alternative template for declarative JavaScript frameworks.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://lib.baomitu.com/preact/8.4.2/preact.min.js"></script>
+  <script src="/js/brieftpl.js"></script>
+  <script>
+    const {h, render} = preact;
+    const {adapter, tags} = brieftpl;
+    adapter.createElement = h;
+
+    const {div, span, button} = tags;
+
+    render(div({id: 'foo'})`
+      ${span`Hello, world!`}
+      ${button({onClick: e => alert('hi!')})`Click Me`}
+    `, document.body);
+  </script>
+</body>
+</html>

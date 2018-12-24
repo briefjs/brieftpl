@@ -3,5 +3,9 @@ module.exports = {
   plugins: ["html"],
   globals: {
     brieftpl: true,
+    preact: true,
+    Omi: true,
+    React: true,
+    ReactDOM: true,
   },
 }
