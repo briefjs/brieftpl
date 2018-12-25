@@ -9,7 +9,7 @@ export function renderTag(textNodes, ...sub) {
     if(typeof el === 'function') {
       el = el``;
     }
-    return [textNodes[i], el];
+    return [textNodes[i], el != null ? el : ''];
   }), textNodes.slice(-1)].reduce((a, b) => {
     if(Array.isArray(b)) {
       return [...a, ...b];
